@@ -1,37 +1,59 @@
 Hospital Management System
-Overview
-This project contains the database schema design and implementation scripts for a Hospital Management System. The schema is developed using Oracle SQL*Plus and demonstrates creating tables, sequences, triggers, and relationships essential for hospital operations.
 
-Entities and Relationships
-Patient: Stores patient details including ID, name, date of birth, and gender.
-
-Department: Stores hospital departments such as Cardiology, Neurology, etc.
-
-Doctor: Stores information about doctors, linked to their department.
-
-Appointment: Records scheduled appointments linking patients to doctors with details.
-
-The ER diagram illustrates how these entities are related, ensuring data integrity through primary and foreign key constraints.
+This project contains the database schema design and implementation scripts for a Hospital Management System. It is developed using Oracle SQL*Plus and demonstrates essential database concepts such as table creation, sequences, triggers, and entity relationships.
 
 Files Included
-hospital_schema.sql - SQL script to create tables, sequences, triggers, and insert sample data.
 
-hospital_er_diagram.png - Entity Relationship diagram visualizing the database schema.
+hospital_schema.sql – SQL script to:
+
+Create tables (Patient, Doctor, Department, Appointment)
+
+Define primary and foreign keys
+
+Create sequences and triggers to auto-generate IDs
+
+Insert sample data
+
+hospital_er_diagram.png – Entity Relationship diagram showing schema structure
+
+Entities and Relationships
+
+Patient
+Stores patient information including ID, name, date of birth, and gender.
+
+Department
+Contains hospital departments such as Cardiology, Neurology, etc.
+
+Doctor
+Includes doctor details and links to the respective department.
+
+Appointment
+Records appointments, linking patients to doctors with date and time details.
+
+The ER diagram represents the connections between these entities, ensuring referential integrity using primary and foreign key constraints.
 
 Key Features
-Use of Sequences and Triggers to auto-generate primary key values.
 
-Composition of Foreign Key Constraints to maintain referential integrity.
+Auto-generation of primary key values using sequences and triggers
 
-Demonstrates DDL commands for table creation and modification.
+Referential integrity through foreign key constraints
 
-Sample multi-row insertions for populating initial data.
+Usage of appropriate data types like DATE and VARCHAR2
 
-Proper use of data types including DATE and VARCHAR2.
+Demonstrates table creation (DDL) and data insertion (DML)
 
-Usage
-Run the hospital_schema.sql script in Oracle SQL*Plus or compatible environment.
+Includes multi-row insert statements for sample data
 
-Refer to the ER diagram (hospital_er_diagram.png) to understand entity relationships.
+How to Use
 
-Modify or extend the schema as needed for further hospital management features.
+Open Oracle SQL*Plus or any Oracle-compatible SQL editor
+
+Execute the hospital_schema.sql script to create the database schema
+
+View the ER diagram using hospital_er_diagram.png to understand relationships between entities
+
+Requirements
+
+Oracle Database
+
+Oracle SQL*Plus or a compatible SQL client
