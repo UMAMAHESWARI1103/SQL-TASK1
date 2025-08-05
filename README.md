@@ -4,8 +4,6 @@ This project contains the **database schema design** and **implementation script
 It is developed using **Oracle SQL\*Plus** and demonstrates essential database concepts such as:
 
 - Table creation (DDL)
-- Sequences
-- Triggers
 - Entity relationships (via primary and foreign keys)
 - Sample data insertion (DML)
 
@@ -16,7 +14,6 @@ It is developed using **Oracle SQL\*Plus** and demonstrates essential database c
 - **`hospital_schema.sql`** – SQL script to:
   - Create tables (`PATIENT`, `DOCTOR`, `DEPARTMENT`, `APPOINTMENT`)
   - Define primary and foreign keys
-  - Create sequences and triggers to auto-generate IDs
   - Insert sample data using `INSERT ALL`
 
 - **`hospital_er_diagram.png`** – Entity-Relationship (ER) diagram showing the schema structure
@@ -43,7 +40,6 @@ The **ER diagram** visualizes the relationships between these entities, ensuring
 
 ##  Key Features
 
--  **Auto-generation** of primary key values using `SEQUENCE` and `TRIGGER`
 -  **Referential integrity** maintained through foreign key constraints
 -  Use of appropriate data types like `VARCHAR2` and `DATE`
 -  Multi-row `INSERT ALL` statements for efficient data loading
@@ -68,7 +64,6 @@ The **ER diagram** visualizes the relationships between these entities, ensuring
 
 ##  Learning Outcomes
 
-- Understand how to use `SEQUENCE` and `TRIGGER` for automated key generation.
 - Practice designing normalized database schemas with foreign key constraints.
 - Perform structured data entry using multi-row `INSERT ALL`.
 - Visualize entity relationships using an ER diagram.
